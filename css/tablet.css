@@ -1,0 +1,108 @@
+/*
+Breakpoint: https://getbootstrap.com/docs/5.0/layout/breakpoints/ 
+Tablet: (mix-width: 576px) and (max-width: 992px)
+*/
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  /* BANNER */
+  #banner {
+    height: 60vh;
+    background-position: center;
+  }
+
+  /* Nav-bar */
+  #nav-bar .container {
+    max-width: 90%;
+  }
+  .container--name p,
+  .container--name span {
+    display: none;
+  }
+  .container--box {
+    height: 55px;
+    padding: 0 25px;
+
+    flex-grow: 1;
+  }
+
+  /* ABOUT */
+  #target,
+  #personal-info {
+    padding: 50px 40px 20px;
+  }
+
+  /* Job-info */
+  #job-info .container {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+      "experience activity"
+      "skill study"
+      "language hobby";
+  }
+  .experience {
+    grid-area: experience;
+  }
+  .skill {
+    grid-area: skill;
+  }
+  .language {
+    grid-area: language;
+  }
+  .activity {
+    grid-area: activity;
+  }
+  .study {
+    grid-area: study;
+  }
+  .hobby {
+    grid-area: hobby;
+  }
+  .container--item {
+    padding-top: 10px;
+  }
+  .container--item h1 {
+    text-align: left;
+    padding-left: 24px;
+  }
+  .container--item--text {
+    padding: 24px;
+  }
+
+  /* Chứng chỉ */
+  #certificate .container {
+    padding: 30px 40px 30px 50px;
+  }
+  .certificate--details--child {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .certificate--img {
+    width: 90%;
+    height: auto;
+  }
+
+  /* Dự án */
+  .project--name {
+    margin-bottom: 0px;
+    padding: 6px 6px 6px 8px;
+  }
+  .project--time {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    align-items: center;
+    padding: 6px 6px 6px 8px;
+  }
+  .project--time span:last-child {
+    grid-column: 2/3;
+  }
+  .project--year {
+    justify-self: center;
+  }
+  .project--icon {
+    padding-left: 0px;
+  }
+  table td:first-child {
+    width: auto;
+  }
+}

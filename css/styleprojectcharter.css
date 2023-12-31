@@ -1,0 +1,91 @@
+:root {
+  --font-color: #000;
+  --body-color: #6a6a6a;
+  --background-color: #f0f8ff;
+  --border-color: #00f;
+  --border-item-color: #bfd0cc;
+  --border-goal-item-color: #deeaed;
+  --border-timeline-item-color: #bce4eb;
+  --timeline-icon-color: #9e88ff;
+  --timeline-icon-text-color: #fff;
+  --timeline-border-icon-color: #676767;
+  --shadow-color: #d4d4d4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+body {
+  font-family: "Open Sans", sans-serif !important;
+}
+/* Thuoc tinh font-weight, line-height, color duoc quy dinh trong bootstrap */
+
+.projectcharter {
+  border: 15px solid var(--border-color);
+  background-color: var(--background-color);
+}
+h2 {
+  border-bottom: 2px solid var(--border-item-color);
+  color: var(--border-color);
+}
+h2,
+h3,
+h4 {
+  font-weight: bold !important;
+}
+/* Goals */
+.goals--item {
+  border-bottom: 1px solid var(--border-goal-item-color);
+}
+/* Primary */
+.primary-icon i {
+  transform: scale(1.3);
+}
+/* Timeline */
+.timeline-detail {
+  border-bottom: 1px dashed var(--border-timeline-item-color);
+}
+.timeline-icon p {
+  font-size: 20px;
+  background-color: var(--timeline-icon-color);
+  border: 1px solid var(--timeline-border-icon-color);
+  border-radius: 50%;
+  color: var(--timeline-icon-text-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+}
+
+/* Back to Digital-CV button */
+a {
+  color: var(--border-color) !important;
+}
+
+/* Responsive Web Design */
+@media only screen and (min-width: 992px) {
+  .row .col-12 {
+    border-right: 10px solid var(--border-color);
+  }
+  .row .col-12:nth-child(odd) {
+    border-bottom: 10px solid var(--border-color);
+  }
+  .projectcharter {
+    box-shadow: -5px 5px 5px 10px var(--shadow-color);
+  }
+  a {
+    transform: translate(120%, -70%);
+  }
+}
+@media only screen and (max-width: 991px) {
+  .row .col-12 {
+    border-bottom: 10px solid var(--border-color);
+  }
+  a {
+    padding: 42px 42px 52px;
+  }
+}
